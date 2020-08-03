@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background:  #003973;
+}
+/* HEADER */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  color: #ffffff;
+  margin-top: 20px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+}
+nav img {
+  width: 300px;
+  height: auto;
+  border-radius: 120px;
+  margin: 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+
+  margin: 30px 20px;
+  width: 50%;
+}
+nav li {
+  padding: 50px;
+  list-style: none;
+  color: #fff;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+nav a:hover {
+  font-size: 28px;
+  transition: all 1s ease-in-out;
+  color: #fff;
+}
+#music,
+#code_project,
+#contact {
+  height: auto;
+  width: auto;
+}
+/* MAIN */
+span  {
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70px;
+  letter-spacing: 1px;
+  text-align: center;
+
+  padding: 5px;
+
+  
+  
+  color:#373b44 ;
+  
+  
+  opacity: 0;
+  transition: all 1s ease;
+}
+span.fade {
+  opacity: 1;
+  color: #fff;
+  
+}
+/* SECTION 1 */
+.record {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+#all-layer {
+  animation: group1 3s  infinite linear;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  color: #fff;
+}
+
+@keyframes group1 {
+from {
+  transform: rotateZ(0deg);
+}
+to {
+  transform: rotateZ(360deg);
+}
+}
+svg {
+  filter: invert(100%);
+  width: 15%;
+  height: auto;
+
+}   
+#music {
+  
+  color: #fff;
+}
+#music h1 {
+  text-align: center;
+  margin: 30px;
+}
+.vinylrelease1,
+.vinylrelease2,
+.vinylrelease3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 30px auto;
+ 
+}
+h2 {
+  font-size: 23px;
+  margin: 30px auto ;
+}
+.logo i {
+
+  margin: 10px 30px;
+}
+ li {
+  list-style: none;
+}
+ol {
+  letter-spacing: 2px;
+  margin: 3px 4px;
+}
+.vinylrelease1 img {
+margin: 30px 70px;
+  
+}
+.vinylrelease2 img {
+  margin: 30px 70px;
+    
+  }
+  .vinylrelease3 img {
+    margin: 30px 70px;
+      
+    }
+a:hover {
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+.logo i {
+  margin-top: 70px;
+}
+i:hover {
+  cursor: pointer;
+  filter: invert(100%);
+  
+}
+#music img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin: 20px;
+}
+/* SECTION CODE PROJECT */
+#code {
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+.code-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.code-logo img {
+  width: 30%;
+  height: auto;
+  margin-bottom: 30px;
+}
+.project-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.project-grid h3 {
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+.calculator,
+.tic-tac-toe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.calculator img {
+  width: 280px;
+  height: auto;
+  margin-left: 20px;
+  
+}
+.tic-tac-toe img {
+  width: 260px;
+  height: auto;
+}
+#code i {
+  
+  margin-top: 20px;
+  color: #fff;
+}
+
+/* ABOUT ME  */
+#about h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+#about ul {
+  text-align: center;
+
+}
+#about li {
+  color: #fff;
+  font-size: 20px;
+  margin: 10px;
+}
+
+/* CONTACT */
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+#contact h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+#contact i {
+  
+  color: #fff;
+  margin: 20px 90px;
+  text-decoration: none;
+
+
+}
+.contact-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
